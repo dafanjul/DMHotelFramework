@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Mat-bJ-k92">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hotel Main View Controller-->
+        <scene sceneID="409-Eq-ad6">
+            <objects>
+                <viewController id="Mat-bJ-k92" customClass="DMHotelMainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QY7-Db-hv2"/>
+                        <viewControllerLayoutGuide type="bottom" id="X3V-O4-wkt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LCl-hl-5PP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mario" translatesAutoresizingMaskIntoConstraints="NO" id="Bc9-gf-0mA">
+                                <rect key="frame" x="34" y="40" width="75" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="eWL-Cc-LkK"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5YZ-tq-jT3">
+                                <rect key="frame" x="48" y="203" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="Mat-bJ-k92" eventType="touchUpInside" id="0GE-ca-pPN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5YZ-tq-jT3" firstAttribute="top" secondItem="Bc9-gf-0mA" secondAttribute="bottom" constant="51" id="PlV-JW-ig5"/>
+                            <constraint firstItem="5YZ-tq-jT3" firstAttribute="centerX" secondItem="Bc9-gf-0mA" secondAttribute="centerX" id="R6O-3q-wbX"/>
+                            <constraint firstItem="Bc9-gf-0mA" firstAttribute="leading" secondItem="LCl-hl-5PP" secondAttribute="leadingMargin" constant="18" id="YiW-s6-5p7"/>
+                            <constraint firstItem="Bc9-gf-0mA" firstAttribute="top" secondItem="QY7-Db-hv2" secondAttribute="bottom" constant="20" id="vaL-xD-Llk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Bc9-gf-0mA" id="EMj-D9-a4A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j8p-1s-vg3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="334" y="340"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mario" width="112" height="112"/>
+    </resources>
+</document>

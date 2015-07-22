@@ -10,6 +10,12 @@
 		BD0CD3171B600AA6004231A2 /* DMHotelFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = BD0CD3161B600AA6004231A2 /* DMHotelFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD0CD31D1B600AA7004231A2 /* DMHotelFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD0CD3111B600AA6004231A2 /* DMHotelFramework.framework */; };
 		BD0CD3241B600AA7004231A2 /* DMHotelFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0CD3231B600AA7004231A2 /* DMHotelFrameworkTests.m */; };
+		BD0CD32E1B600C9C004231A2 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD0CD32D1B600C9C004231A2 /* Media.xcassets */; };
+		BD0CD3311B601ED1004231A2 /* DMHotelStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD0CD3301B601ED1004231A2 /* DMHotelStoryboard.storyboard */; };
+		BD0CD3341B601FA6004231A2 /* DMHotelMainViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BD0CD3321B601FA6004231A2 /* DMHotelMainViewController.h */; };
+		BD0CD3351B601FA6004231A2 /* DMHotelMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0CD3331B601FA6004231A2 /* DMHotelMainViewController.m */; };
+		BD0CD3381B6020C5004231A2 /* DMHotel.h in Headers */ = {isa = PBXBuildFile; fileRef = BD0CD3361B6020C5004231A2 /* DMHotel.h */; };
+		BD0CD3391B6020C5004231A2 /* DMHotel.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0CD3371B6020C5004231A2 /* DMHotel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,12 @@
 		BD0CD31C1B600AA7004231A2 /* DMHotelFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMHotelFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD0CD3221B600AA7004231A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD0CD3231B600AA7004231A2 /* DMHotelFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMHotelFrameworkTests.m; sourceTree = "<group>"; };
+		BD0CD32D1B600C9C004231A2 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = Resources/Media.xcassets; sourceTree = SOURCE_ROOT; };
+		BD0CD3301B601ED1004231A2 /* DMHotelStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = DMHotelStoryboard.storyboard; path = Resources/DMHotelStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
+		BD0CD3321B601FA6004231A2 /* DMHotelMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMHotelMainViewController.h; sourceTree = "<group>"; };
+		BD0CD3331B601FA6004231A2 /* DMHotelMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMHotelMainViewController.m; sourceTree = "<group>"; };
+		BD0CD3361B6020C5004231A2 /* DMHotel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMHotel.h; sourceTree = "<group>"; };
+		BD0CD3371B6020C5004231A2 /* DMHotel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMHotel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +85,11 @@
 			children = (
 				BD0CD3161B600AA6004231A2 /* DMHotelFramework.h */,
 				BD0CD3141B600AA6004231A2 /* Supporting Files */,
+				BD0CD32F1B600CA4004231A2 /* Resources */,
+				BD0CD3321B601FA6004231A2 /* DMHotelMainViewController.h */,
+				BD0CD3331B601FA6004231A2 /* DMHotelMainViewController.m */,
+				BD0CD3361B6020C5004231A2 /* DMHotel.h */,
+				BD0CD3371B6020C5004231A2 /* DMHotel.m */,
 			);
 			path = DMHotelFramework;
 			sourceTree = "<group>";
@@ -102,6 +119,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BD0CD32F1B600CA4004231A2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BD0CD32D1B600C9C004231A2 /* Media.xcassets */,
+				BD0CD3301B601ED1004231A2 /* DMHotelStoryboard.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -109,6 +135,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD0CD3381B6020C5004231A2 /* DMHotel.h in Headers */,
+				BD0CD3341B601FA6004231A2 /* DMHotelMainViewController.h in Headers */,
 				BD0CD3171B600AA6004231A2 /* DMHotelFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,6 +220,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD0CD32E1B600C9C004231A2 /* Media.xcassets in Resources */,
+				BD0CD3311B601ED1004231A2 /* DMHotelStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +239,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD0CD3351B601FA6004231A2 /* DMHotelMainViewController.m in Sources */,
+				BD0CD3391B6020C5004231A2 /* DMHotel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +430,7 @@
 				BD0CD3291B600AA7004231A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BD0CD32A1B600AA7004231A2 /* Build configuration list for PBXNativeTarget "DMHotelFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +439,7 @@
 				BD0CD32C1B600AA7004231A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
