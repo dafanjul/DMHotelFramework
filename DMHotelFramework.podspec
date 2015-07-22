@@ -53,9 +53,9 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "Dario Fanjful" => "dario.fanjul@despegar.com" }
-  # Or just: s.author    = "Dario Fanjful"
-  # s.authors            = { "Dario Fanjful" => "dario.fanjul@despegar.com" }
+  s.author             = { "Dario Fanjul" => "dario.fanjul@despegar.com" }
+  # Or just: s.author    = "Dario Fanjul"
+  # s.authors            = { "Dario Fanjul" => "dario.fanjul@despegar.com" }
   # s.social_media_url   = "http://twitter.com/Dario Fanjful"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -79,8 +79,8 @@ Pod::Spec.new do |s|
   #
 
 #  s.source       = { :git => "http://EXAMPLE/DMHotelFramework.git", :tag => "0.0.1" }
-s.source       = { :path => "."}
-
+# s.source       = { :path => "."}
+  s.source       = { :git => "https://github.com/dafanjul/DMHotelFramework.git" }
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  CocoaPods is smart about how it includes source code. For source files
@@ -89,7 +89,7 @@ s.source       = { :path => "."}
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "DMHotelFramework/**/*.{h,m, swift}"
+  s.source_files  = "DMHotelFramework/**/*.{h,m, swift}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
