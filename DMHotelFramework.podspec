@@ -79,8 +79,8 @@ Pod::Spec.new do |s|
   #
 
 #  s.source       = { :git => "http://EXAMPLE/DMHotelFramework.git", :tag => "0.0.1" }
-# s.source       = { :path => "."}
-  s.source       = { :git => "https://github.com/dafanjul/DMHotelFramework.git" }
+  s.source       = { :path => "."}
+  #s.source       = { :git => "https://github.com/dafanjul/DMHotelFramework.git" }
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  CocoaPods is smart about how it includes source code. For source files
@@ -92,8 +92,11 @@ Pod::Spec.new do |s|
   s.source_files  = "DMHotelFramework/**/*.{h,m, swift}"
   s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
 
+  s.public_header_files = "DMHotelFramework/DMHotelFramework.h"
+   #s.private_header_files = "DMHotelFramework/*.h"
+
+   #s.module_map = "DMHotelFramework/DMHotelFramework.modulemap"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -132,5 +135,7 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+
+s.dependency "DMCoreFramework", "~> 0.0.1"
 
 end

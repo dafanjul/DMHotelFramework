@@ -1,0 +1,6 @@
+framework module DMHotelFramework {
+    umbrella header "DMHotelFramework.h"
+    
+    export *
+    module * { export * }
+}
