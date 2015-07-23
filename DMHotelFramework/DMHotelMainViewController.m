@@ -7,6 +7,7 @@
 //
 
 #import "DMHotelMainViewController.h"
+@import DMCoreFramework;
 
 @interface DMHotelMainViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -17,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -28,6 +30,12 @@
 - (IBAction)buttonPressed:(id)sender {
     NSBundle *bun = [NSBundle bundleForClass:[self class]];
     self.imageView.image = [UIImage imageNamed:@"smile" inBundle:bun compatibleWithTraitCollection:nil];
+    
+    CoreCode *core = [[CoreCode alloc]init];
+    UIView *coreView = [core quieroMagia];
+    
+    [self.view addSubview:coreView];
+    
 }
 
 /*
