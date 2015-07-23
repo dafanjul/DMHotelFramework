@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "DMHotelFramework"
   s.version      = "0.0.1"
-  s.summary      = "A short description of DMHotelFramework."
+  s.summary      = "A short description sarasa of DMHotelFramework."
 
   s.description  = <<-DESC
                    A longer description of DMHotelFramework in Markdown format.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
                    * Finally, don't worry about the indent, CocoaPods strips it!
                    DESC
 
-  s.homepage     = "http://EXAMPLE/DMHotelFramework"
+  s.homepage     = "http://www.despegar.com"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -39,9 +39,9 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-
+  #s.license      = "MIT (example)"
+  
+  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -79,8 +79,8 @@ Pod::Spec.new do |s|
   #
 
 #  s.source       = { :git => "http://EXAMPLE/DMHotelFramework.git", :tag => "0.0.1" }
-  s.source       = { :path => "."}
-  #s.source       = { :git => "https://github.com/dafanjul/DMHotelFramework.git" }
+  #s.source       = { :path => "."}
+  s.source       = { :git => "https://github.com/dafanjul/DMHotelFramework.git", :tag => "0.0.1" }
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  CocoaPods is smart about how it includes source code. For source files
@@ -136,6 +136,6 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
 
-s.dependency "DMCoreFramework", "~> 0.0.1"
-
+s.dependency "DMCoreFramework"
+s.dependency "AFNetworking"
 end

@@ -1,0 +1,19 @@
+PODS:
+  - DMCoreFramework (0.0.1)
+
+DEPENDENCIES:
+  - DMCoreFramework (from `https://github.com/dafanjul/DMCoreFramework.git`)
+
+EXTERNAL SOURCES:
+  DMCoreFramework:
+    :git: https://github.com/dafanjul/DMCoreFramework.git
+
+CHECKOUT OPTIONS:
+  DMCoreFramework:
+    :commit: 5bc85df96b39a2857e8e0c2dd48fdb01c3f1bfa9
+    :git: https://github.com/dafanjul/DMCoreFramework.git
+
+SPEC CHECKSUMS:
+  DMCoreFramework: 0f0611897bdfbe417bff569173664e0948b9fcb3
+
+COCOAPODS: 0.37.2

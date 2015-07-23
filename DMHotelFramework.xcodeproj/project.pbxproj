@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44420F3BFD5F1A63C92D74DB /* Pods_DMHotelFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A28D9C2BB5C85E7E4DBD47 /* Pods_DMHotelFramework.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		BD0CD3171B600AA6004231A2 /* DMHotelFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = BD0CD3161B600AA6004231A2 /* DMHotelFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD0CD31D1B600AA7004231A2 /* DMHotelFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD0CD3111B600AA6004231A2 /* DMHotelFramework.framework */; };
 		BD0CD3241B600AA7004231A2 /* DMHotelFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0CD3231B600AA7004231A2 /* DMHotelFrameworkTests.m */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29B4E3346D982EEDC23BD988 /* Pods-DMHotelFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMHotelFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DMHotelFramework/Pods-DMHotelFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		BD0CD3111B600AA6004231A2 /* DMHotelFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DMHotelFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD0CD3151B600AA6004231A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD0CD3161B600AA6004231A2 /* DMHotelFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMHotelFramework.h; sourceTree = "<group>"; };
@@ -42,6 +44,8 @@
 		BD0CD3361B6020C5004231A2 /* DMHotel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMHotel.h; sourceTree = "<group>"; };
 		BD0CD3371B6020C5004231A2 /* DMHotel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMHotel.m; sourceTree = "<group>"; };
 		BD0CD36F1B612C88004231A2 /* DMHotelFramework.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = DMHotelFramework.modulemap; sourceTree = "<group>"; };
+		D67563367AACDC72C0DA52FA /* Pods-DMHotelFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMHotelFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-DMHotelFramework/Pods-DMHotelFramework.release.xcconfig"; sourceTree = "<group>"; };
+		F2A28D9C2BB5C85E7E4DBD47 /* Pods_DMHotelFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DMHotelFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44420F3BFD5F1A63C92D74DB /* Pods_DMHotelFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,12 +68,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27D6CF54F31350DB12CDD8FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2A28D9C2BB5C85E7E4DBD47 /* Pods_DMHotelFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2EA002EBF176E1EE8397252F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29B4E3346D982EEDC23BD988 /* Pods-DMHotelFramework.debug.xcconfig */,
+				D67563367AACDC72C0DA52FA /* Pods-DMHotelFramework.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BD0CD3071B600AA6004231A2 = {
 			isa = PBXGroup;
 			children = (
 				BD0CD3131B600AA6004231A2 /* DMHotelFramework */,
 				BD0CD3201B600AA7004231A2 /* DMHotelFrameworkTests */,
 				BD0CD3121B600AA6004231A2 /* Products */,
+				2EA002EBF176E1EE8397252F /* Pods */,
+				27D6CF54F31350DB12CDD8FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,10 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD0CD3271B600AA7004231A2 /* Build configuration list for PBXNativeTarget "DMHotelFramework" */;
 			buildPhases = (
+				3041FACD82E16D4244150178 /* Check Pods Manifest.lock */,
 				BD0CD30C1B600AA6004231A2 /* Sources */,
 				BD0CD30D1B600AA6004231A2 /* Frameworks */,
 				BD0CD30E1B600AA6004231A2 /* Headers */,
 				BD0CD30F1B600AA6004231A2 /* Resources */,
+				215CE20933292B3A260D569D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,6 +261,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		215CE20933292B3A260D569D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DMHotelFramework/Pods-DMHotelFramework-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3041FACD82E16D4244150178 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BD0CD30C1B600AA6004231A2 /* Sources */ = {
@@ -355,6 +414,7 @@
 		};
 		BD0CD3281B600AA7004231A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29B4E3346D982EEDC23BD988 /* Pods-DMHotelFramework.debug.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -370,6 +430,7 @@
 		};
 		BD0CD3291B600AA7004231A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D67563367AACDC72C0DA52FA /* Pods-DMHotelFramework.release.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
