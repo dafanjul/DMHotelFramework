@@ -11,7 +11,15 @@ pod "DMCoreFramework"
 pod "AFNetworking" 
 end
 
+target 'DMHotelApp' do
+    pod "DMCoreFramework"
+    pod "AFNetworking"
+end
+
 target 'DMHotelFrameworkTests' do
 
 end
 
+target 'DMHotelAppTests' do
+
+end

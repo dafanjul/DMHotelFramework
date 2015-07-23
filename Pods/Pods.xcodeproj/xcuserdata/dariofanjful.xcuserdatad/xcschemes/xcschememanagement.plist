@@ -4,6 +4,26 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-DMHotelApp-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-DMHotelApp-DMCoreFramework.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-DMHotelApp.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-DMHotelFramework-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-DMHotelFramework-DMCoreFramework.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2CA3837DD34E3335D1202805</key>
+		<key>41607B7991DD0FF93257EE68</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D7A30D3DD22795C2A7EAB095</key>
+		<key>744C0A21C79C613C316D21E2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>89AEE5984CB2E5CC9EAF4B2D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A17F52F03A085F72B309EA13</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CF66F5259E49A67190D7D14E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FCC4FF90EC2774BCCB9D89C7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

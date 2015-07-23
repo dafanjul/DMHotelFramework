@@ -1,19 +1,23 @@
 //
-//  DMCalendar.swift
+//  CoreCode.swift
 //  DMCoreFramework
 //
 //  Created by Dario Fanjul on 7/23/15.
 //  Copyright (c) 2015 Dario Fanjul. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class DMCalendar {
+public class CoreCode: NSObject {
     
-    func getCalendar() -> UIView {
-        let v = UIView(frame: CGRect(x: 50, y: 50, width: 50, height: 50))
+    public func quieroMagia () -> UIView {
+        
+        let v = UIView(frame: CGRectMake(50, 50, 50, 50))
+        
         v.backgroundColor = UIColor.cyanColor()
+        
         return v
+        
     }
     
 }
